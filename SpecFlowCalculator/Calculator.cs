@@ -17,7 +17,7 @@ namespace SpecFlowCalculator
                 total = 0;
             } else {
                 var numbers = Numbers.Split(',')?.Select(Int32.Parse).ToList();
-                for (int i = 0; i < numbers.Count; i++)
+                for (int i = 0; i < numbers?.Count; i++)
                 {
                     total += numbers[i];
                 }
